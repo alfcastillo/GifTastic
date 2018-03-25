@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <style>
+        .jumbotron {
+            margin-top: 20px;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container col-9">
+        <div class="jumbotron">
+            <h1 class="display-5">Topics of Interest</h1>
+            <form id="topic-form">
+                <label for="topic-input">Add a Topic</label>
+                <input type="text" id="topic-input">
+                <br>
+                <!-- Button triggers new movie to be added -->
+                <input id="add-topic" type="submit" value="Add a Topic">
+            </form>
+
+            <hr class="my-2">
+             <!-- Rendered buttons will get dumped Here  -->
+            <div id="buttons-view">
+                <button data-animal="cat">Cat</button>
+                <button data-animal="dog">Dog</button>
+                <button data-animal="bird">Bird</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container col-9">
+        <div class="jumbotron">
+            <h1 class="display-5">GIFs</h1>
+            <hr class="my-2">
+            <div id="gifs-appear-here"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+
+</body>
+
+</html>
