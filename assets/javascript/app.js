@@ -16,6 +16,8 @@ function renderButtons() {
     topicButton.addClass("topic");
     // Added a data-attribute
     topicButton.attr("data-topic", topicsArray[i]);
+    // Boostrap Button Format
+    topicButton.addClass("btn btn-info");
     // Provided the initial button text
     topicButton.text(topicsArray[i]);
     // Added the button to the buttons-view div
@@ -89,7 +91,7 @@ function animateGif() {
     $(this).attr("src", $(this).attr("data-still"));
     $(this).attr("data-state", "still");
   }
-  console.log("New State--> " + state);
+  console.log("New State--> " + $(this).attr("data-state"));
 };
 
 
